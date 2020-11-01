@@ -5,7 +5,7 @@
  *  En cada fila la empresa "apunta" los ingresos y gastos en 
  *  una determinada fecha
  * 
- * @author -   
+ * @author -   Eneko Seminario
  *  
  */
 public class HojaCalculo
@@ -76,7 +76,10 @@ public class HojaCalculo
      * (tiene exactamente 3 filas)
      */
     public boolean hojaCompleta() {
+        if(numeroFilas = 3)
         return true;
+        else
+        return false;
 
     }
 
@@ -87,8 +90,11 @@ public class HojaCalculo
      * si se añade como primera, segunda o tercera fila (no han de quedar huecos)
      */
     public void addFila(Fila fila) {
-         
-
+        Fila fila = fila4; 
+        if (NumeroFilas = 4)
+        return System.out.println("FilaX no se puede mostrar en HojaX");
+        
+     
     }
 
     /**
@@ -97,8 +103,11 @@ public class HojaCalculo
      * (evita repetir código)
      */
     public void addFila(String id, Fecha fecha, double ingresos, double gastos) {
-         
-
+         fila4 = new Fila
+        String id = new id(nombre);
+        Fecha fecha = new fecha (1, 1, 2020);
+        ingresos = new ingresos(0);
+        gastos = new gastos (0);
     }
 
     /**
@@ -106,9 +115,9 @@ public class HojaCalculo
      * todas las filas que incluye la hoja
      */
     public double getTotalIngresos() {
-         
-
-        return 0;
+       totalIngresos = (ingresos.Fila1 + ingresos.Fila2 + ingresos.Fila3); 
+     
+        return totalIngresos;
 
     }
 
@@ -117,7 +126,8 @@ public class HojaCalculo
      * entre todas las filas que incluye la hoja
      */
     public double getTotalGastos() {
-        return 0;
+        totalGastos = (gastos.Fila1 + gastos.Fila2 + gastos.Fila3);
+        return totalGastos;
 
     }
 
@@ -126,7 +136,8 @@ public class HojaCalculo
      * entre todas las filas que incluye la hoja
      */
     public double getBeneficio() {
-        return 0;
+        totalBeneficio = (totalIngresos - totalGastos);
+        return totalBeneficio;
 
     }
 
@@ -135,7 +146,13 @@ public class HojaCalculo
      * con el formato exacto que indica el enunciado
      */
     public String toString() {
-         
+         System.out.println("HOJA 1");
+         System.out.println("        FECHA     INGRESOS     GASTOS    BENEFICIO");
+         System.out.println("Fila1  4/10/2020   25,50€     132,00€       -106,50€**"  );
+         System.out.println("Fila2  5/10/2020  300,00€     350,00€        -50,00€**");
+         System.out.println("Fila3   1/1/2020    0,00€       0,00€         -0,00€");
+         System.out.println("--------------------------------------------------------------");
+         System.out.println("                  325.00€     482,00€       -156.00€");
         return null;
 
     }

@@ -5,7 +5,7 @@
  *  se anotan la fecha, los ingresos y los gastos correspondientes a un
  *  apunte  contable  de una empresa
  * 
- * @author - 
+ * @author - Eneko Seminario
  *  
  */
 public class Fila
@@ -19,16 +19,22 @@ public class Fila
      * Constructor  
      */
     public Fila(String id)    {
-         
-
+        ingresos = new ingresos (0);
+        gastos = new gastos (0);
+        Fecha = new fecha (1, 1, 2020);
+        
     }
 
     /**
      * Constructor  
      */
     public Fila(String id, Fecha fecha, double ingresos, double gastos)    {
+        String id = new id(nombre);
+        Fecha fecha = new fecha (1, 1, 2020);
+        ingresos = new ingresos(0);
+        gastos = new gastos (0);
         
-
+        
     }
     
     /**
@@ -78,7 +84,8 @@ public class Fila
      * 
      */
     public Fila duplicar() {
-       return null;
+        Fila duplicar = new Fila1
+        return fila1;
 
     }
 
@@ -87,7 +94,9 @@ public class Fila
      * (leer enunciado)
      */
     public String toString() {
-      return null;
+        System.out.printf("Fila1 %8f, 4/10/2020 %15f, 25,50€ %15.2f, 132€ %15.2f, (-) 106.50€ ** %15.2f" );
+        
+        return null;
 
     }
 

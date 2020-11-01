@@ -2,7 +2,7 @@
 /**
  *  Modela una fecha
  *  
- *  @author - 
+ *  @author - Eneko Seminario
  */
 public class Fecha
 {
@@ -74,9 +74,11 @@ public class Fecha
      * Devuelve una copia exacta al objeto actual
      */
     public Fecha obtenerCopia() {
-         return null;
+        obtenerCopia = new copia 
+        return copia;
+        
 
-    }
+    } 
 
     /**
      * 
