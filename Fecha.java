@@ -74,7 +74,7 @@ public class Fecha
      * Devuelve una copia exacta al objeto actual
      */
     public Fecha obtenerCopia() {
-        obtenerCopia = new copia 
+        ObtenerCopia = new copia (this.dia, this.mes, this.año);
         return copia;
         
 

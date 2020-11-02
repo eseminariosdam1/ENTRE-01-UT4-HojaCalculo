@@ -84,7 +84,7 @@ public class Fila
      * 
      */
     public Fila duplicar() {
-        Fila duplicar = new Fila1
+        Duplicar = new Fila1;
         return fila1;
 
     }
